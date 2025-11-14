@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestionnaire de Tâches</h1>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="titre de la tâche" required>
+            <input type="text" id="taskDesc" placeholder="Description">
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <div class="filters">
+            <button data-filter="all">Toutes</button>
+            <button data-filter="pending">En cours</button>
+            <button data-filter="completed">Terminées</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
